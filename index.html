@@ -1,37 +1,15 @@
-// Defina o tamanho da tela
-var largura = 500;
-var altura = 500;
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/addons/p5.sound.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8" />
 
-// Crie uma lista para armazenar os círculos
-var circulos = [];
-
-function setup() {
-
-  createCanvas(500, 500);
-  
-
-  for (var i = 0; i < random(100, 1000); i++) {
-    circulos.push({
-      x: random(largura),
-      y: random(altura),
-      dx: (0),
-      dy: (0),
-      tamanho: (5)
-    });
-  }
-}
-
-function draw() {
-  
-  background(0);
-  
-  
-  for (var i = 0; i < circulos.length; i++) {
-    var c = circulos[i];
-    
-   
-    fill("white");
-    noStroke();
-    ellipse(c.x, c.y, c.tamanho, c.tamanho);
-  }
-}
+  </head>
+  <body>
+    <main>
+    </main>
+    <script src="sketch.js"></script>
+  </body>
+</html>
